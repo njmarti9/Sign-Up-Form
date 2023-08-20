@@ -1,0 +1,141 @@
+:root {
+    --sec-bg-color: #f9fafb;
+    --sec-color: #596d48;
+}
+
+@font-face {
+    font-family: Norse-Bold;
+    src: url(fonts/Norse-Bold.otf);
+}
+
+body {
+    display: flex;
+    margin: 0;
+}
+
+.leftside {
+    display: flex;
+    width: 33%;
+    height: 100vh;
+    justify-content: center;
+    background-image: url(images/david-bruyndonckx-unsplash.jpg);
+}
+
+.opbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 20%;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: inherit;
+    gap: 5px;
+}
+
+.logotext {
+    color: white;
+    font-family: Norse-Bold, sans-serif;
+    font-size: 70px;
+    margin: 30px 0px;
+}
+
+.logo {
+    width: auto;
+    height: 75px;
+    padding: 5px;
+}
+
+.photolink {
+    color: white;
+}
+
+.photocredit {
+    color: white;
+    position: fixed;
+    bottom: 0px;
+    font-size: 12px;
+}
+
+img {
+    width: 100%;
+    height: 100vh;
+}
+
+.rightside {
+    display: flex;
+    flex-direction: column;
+    width: 67%;
+}
+
+.rsec2 {
+    height: 32vh;
+}
+
+h4 {
+    padding: 5px;
+    padding-left: 30px;
+    margin: 0px;
+}
+
+.form {
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 25px;
+    overflow: auto;
+}
+
+label {
+    font-size: small;
+}
+
+.forminput {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.rsec1, .rsec3 {
+    background-color: var(--sec-bg-color);
+    height: 34vh;
+    padding-left: 30px;
+}
+
+.rsec1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: inset 0px -10px 5px -10px #111; 
+}
+
+.rsec3 {
+    box-shadow: inset 0px 15px 10px -15px #111;  
+}
+
+.rsec1 p {
+    width: 70%;
+    font-weight: bold;
+}
+
+.loginlink {
+    color: var(--sec-color);
+    text-decoration: none;
+}
+
+#createbtn {
+    margin-top: 20px;
+    padding: 10px 40px;
+    background-color: var(--sec-color);
+    border-radius: 5px;
+    border: 0;
+    color: white;
+}
+
+.rsec3 p {
+    font-size: 14px;
+}
+
+input:invalid {
+    border: 2px solid red;
+    border-radius: 2px;
+}

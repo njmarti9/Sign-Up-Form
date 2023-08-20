@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <script src="signupform.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="leftside">
+        <div class="opbox">
+            <img class="logo" src="images/odin-lined.png">
+            <h1 class="logotext">ODIN</h1>
+        </div>
+        <p class="photocredit">Photo by <a class="photolink" href="https://unsplash.com/@david_bxl?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">David Bruyndonckx</a> on <a class="photolink" href="https://unsplash.com/photos/F_hft1Wiyj8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        </p>
+        <img src="images/david-bruyndonckx-unsplash.jpg">
+    </div>
+    <div class="rightside">
+        <div class="rsec1">
+            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <i>now</i> to get started.</p>
+            <p>You <i>know</i> you want to.</p>
+        </div>
+
+        <div class="rsec2">
+            <h4>Let's do this!</h4>
+            <div class="form">
+                <div class="forminput">
+                    <label for="first_name">*First Name:</label>
+                    <input type="text" id="first_name" name="first_name" required>
+                </div>
+                
+                <div class="forminput">
+                    <label for="last_name">*Last Name:</label>
+                    <input type="text" id="last_name" name="last_name" required>
+                </div>
+
+                <div class="forminput">
+                    <label for="user_email">*Email Address:</label>
+                    <input type="email" id="user_email" name="email" placeholder="you@example.com" required>    
+                </div>
+                
+                <div class="forminput">
+                    <label for="phone_number">Phone Number:</label>
+                    <input type="tel" id="phone_number" name="phone_number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
+                </div>
+
+                <div class="forminput">
+                    <label for="user_password1">*Password:</label>
+                    <input type="password" id="user_password1" name="password1">
+                </div>       
+
+                <div class="forminput">
+                    <label for="user_password2">*Confirm Password:</label>
+                    <input type="password" id="user_password2" name="password2">
+                </div>
+            </div>
+        </div>
+
+        <div class="rsec3">
+            <button id="createbtn">Create Account</button>
+            <p>Already have an account? <a class="loginlink" href="">Log In</a> </p>
+        </div>
+    </div>
+</body>
+</html>
